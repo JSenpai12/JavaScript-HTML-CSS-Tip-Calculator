@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div class="whole-calculator-container">
+        <div class="whole-calculator-screen">
+                <!--    Upper Container -->
+            <div class="upper-container">
+                <div class="title-container">
+                        <img src="calculator.png" class="title-img"/>
+                        <h4 class="title">Tip Calculator</h4>
+                </div>
+                <p class="title-container__paragraph">Calculate tips and split bills easily</p>
+            </div>
+            <!--    Closed Upper Container  -->
+
+            <div class="main-calculator-container">
+                <!--    Bill amount container   -->
+                <div class="bill-amount-container">
+                    <p class="bill-amount-title">$ Bill Amount</p>
+                    <input type="number" min="0" placeholder="Enter bill amount" class="bill-amount__input">
+                </div>
+                <!--    Closed Bill amount container    -->
+
+                <!--    Tip Percentage Container    -->
+                <div class="tip-percentage-container">
+                    <p class="tip-percent-title">% Tip Percentage</p>
+
+                    <!--    Tip Percentage Buttons  -->
+                    <div class="tip-percent-btns">
+                        <button class="tip-btn-15" >15%</button>
+                        <button class="tip-btn-18" >18%</button>
+                        <button class="tip-btn-20" >20%</button>
+                        <button class="tip-btn-25" >25%</button>
+                    </div>
+                    <!--    Closed Tip Percentage Buttons   -->
+                    
+                    <div class="tip-custom-container">
+                        <p class="custom-tip-title">Custom tip(%)</p>
+                        <input type="number" min="0" placeholder="Enter custom %" class="custom-tip__input">
+                    </div>
+                </div>
+                <!--    Closed Tip Percentage Container -->
+                
+                <!--    Number of People Container  -->
+                <div class="number-people-container">
+
+                    <p class="number-people__title">
+                        <img src="" class="number-people__img">
+                        Number of People
+                    </p>
+                    <div class="number-people__widgets">
+                        <button class="npw-decrease__btn">-</button>
+                        <input type="number" min="1" placeholder="1" class="number-people__input">
+                        <button class="npw-increase__btn">+</button>
+                    </div>
+                </div>
+                <!--    Closed Number of People Container   -->
+<hr>
+                <!--    Calculation Results Container   -->
+                <div class="calculation-results__container">
+                    <p class="calculation-results__title">Calculation Results</p>
+                    <div class="calculation-results__layout">
+
+                        <div class="tip-amount_container">
+                            <span class="span-1">Tip Amount:</span>
+                            <span class="span-2">$0.00</span>
+                        </div>
+
+                        <div class="total-amount__container">
+                            <span class="span-3">Total Amount:</span>
+                            <span class="span-4">$0.00</span>
+                        </div>
+
+                        <div class="per-person__container">
+                            <span class="span-5">Per Person:</span>
+                            <span class="span-6">$0.00</span>
+                        </div>
+
+                        <div class="calculation-summary__results">
+                            <p class="calculation-summary__paragraph1"><span class="summary-span">18%</span> tip on <span class="summary-amount">$0.00</span></p>
+                            <p class="calculation-summary__paragraph2">Split between <span class="summary-split">1</span> people</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--    Closed Calculation Results  -->
+            </div>
+            
+
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

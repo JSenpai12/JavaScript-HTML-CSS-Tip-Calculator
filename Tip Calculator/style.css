@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.whole-calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.whole-calculator-screen {
+    background-color: #fff;
+    border: gray 1px solid;
+    padding: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
+.upper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    margin-bottom: 15px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.title-img {
+    width: 23.99px;
+    display: inline-block;
+}
+
+.title-container__paragraph {
+    display: inline-block;
+    color: #717182;
+}
+
+.main-calculator-container {
+    padding-bottom: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 0px q;
+}
+
+.bill-amount-title {
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+
+.bill-amount__input {
+    background-color: rgba(231, 231, 231, 0.813);
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 300px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out
+}
+
+.bill-amount__input:focus {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+.bill-amount-container {
+    margin-bottom: 10px;
+}
+
+
+.tip-percent-title {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.tip-percent-btns {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+.tip-btn-15, .tip-btn-18, .tip-btn-20, .tip-btn-25 {
+    font-weight: bold;
+    background-color: white;
+    border: gray 1px solid;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button.active {
+    background: black;
+    color: white
+}
+
+.tip-custom-container {
+    margin-bottom: 10px;
+}
+
+.custom-tip-title {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.custom-tip__input {
+    background-color: rgba(231, 231, 231, 0.813);
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 300px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.custom-tip__input:focus {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+.number-people-container {
+    margin-bottom: 10px;
+}
+
+.number-people__widgets {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.number-people__title {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.npw-decrease__btn, .npw-increase__btn {
+    font-weight: bold;
+    background-color: white;
+    border: gray 1px solid;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.npw-decrease__btn {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.npw-decrease__btn:active, .npw-increase__btn:active {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+} 
+
+.number-people__input {
+    background-color: rgba(231, 231, 231, 0.813);
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 230px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
+.number-people__input:focus {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+
+
+.number-people__widgets {
+    margin-bottom: 15px;
+}
+
+.calculation-results__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculation-results__title {
+    font-size: 15px;
+}
+
+.calculation-summary__results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.span-1, .span-3, .span-5 {
+    font-size: 15px;
+    color: gray;
+}
+
+.span-2 {
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgba(231, 231, 231, 0.813);
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+}     
+
+.span-4 {
+    font-size: 13px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+}
+
+.span-6 {
+    font-size: 13px;
+    font-weight: bold;
+    background-color: white;
+    border: gray 1px solid;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
+}
+
+.calculation-results__layout {
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.tip-amount_container, .total-amount__container, .per-person__container {
+    display: flex;
+    gap: 150px;
+    margin-bottom: 12px;
+}
+
+.tip-amount_container {
+    gap: 163px;
+}
+
+.per-person__container {
+    gap: 170px;
+}
+
+.calculation-summary__results {
+    background-color: rgba(233, 233, 233, 0.678);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: gray;
+    border-radius: 12px;
+    border: gray 1px solid;
+}
